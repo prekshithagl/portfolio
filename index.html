@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Prekshitha GL | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <h1 class="logo">Prekshitha GL</h1>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+
+            <a href="resume.pdf" class="resume-btn" download>Resume ⬇️</a>
+            <button class="darkmode-btn" onclick="toggleDarkMode()">🌙</button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h2>Hello, I'm <span class="typing"></span></h2>
+            <p>Information Science Student • Technology Enthusiast</p>
+
+            <div class="hero-buttons">
+                <button class="btn" onclick="window.location='#projects'">View Projects</button>
+                <button class="btn-outline" onclick="window.location='resume.pdf'">Download Resume</button>
+            </div>
+
+            <div class="social-icons">
+                <a href="mailto:prekshithagl16@gmail.com">📧</a>
+                <a href="https://www.linkedin.com/in/prekshitha-gl-535294366" target="_blank">🔗</a>
+            </div>
+        </div>
+
+        <img src="images/me.jpg" class="hero-img" alt="My Photo" />
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card reveal">
+        <h2>About Me</h2>
+        <p>
+            I am an Information Science student skilled in Java, Python, JavaScript,
+            HTML, CSS, SQL, and Machine Learning basics. I enjoy solving problems and
+            building efficient, user-friendly applications.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="card reveal">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Java</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>SQL / MySQL</li>
+            <li>MongoDB (Basics)</li>
+            <li>Machine Learning Basics</li>
+            <li>OOPs</li>
+            <li>DSA Basics</li>
+            <li>Git & GitHub</li>
+            <li>Agile & Scrum</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card reveal">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <img src="images/pcos.jpg" alt="PCOS Project" />
+            <div>
+                <h3>Early Detection of PCOS using Machine Learning</h3>
+                <p>
+                    Machine learning model predicting PCOS using patient health data.
+                    Includes UI and a complete research approach.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/portfolio.jpg" alt="Portfolio Project" />
+            <div>
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    A modern, responsive portfolio website built using HTML, CSS, and
+                    JavaScript.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="card reveal">
+        <h2>Education</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>B.E Information Science (CGPA: 8.77)</h3>
+                <span>2022 - 2026</span>
+                <p>Don Bosco Institute of Technology, Bengaluru</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>PUC (PCMC) – 95.6%</h3>
+                <span>2020 - 2022</span>
+                <p>SPSMPU College, Davanagere</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>SSLC – 96.32%</h3>
+                <span>2019 - 2020</span>
+                <p>Vagdevi High School, Holalkere</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="card reveal">
+        <h2>Achievements</h2>
+
+        <!-- CERTIFICATE 1 -->
+        <div class="project-card">
+            <img src="images/certificate.jpg" alt="Best Paper Award" class="cert-img" />
+            <div>
+                <h3>Best Paper Presentation – I3C 2025</h3>
+                <p>
+                    Received Best Paper Award for presenting “Early Detection of PCOS
+                    using Machine Learning” at I3C-2025 International Conference.
+                </p>
+            </div>
+        </div>
+
+        <!-- CERTIFICATE 2 -->
+        <div class="project-card">
+            <img src="images/certificate2.jpg" alt="Academic Excellence Award" class="cert-img" />
+            <div>
+                <h3>Academic Excellence Award</h3>
+                <p>
+                    Awarded Certificate of Appreciation for outstanding academic
+                    performance for the year 2023–24 in ISE Department, DBIT.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card reveal">
+        <h2>Contact</h2>
+        <p>
+            Email:
+            <a href="mailto:prekshithagl16@gmail.com">prekshithagl16@gmail.com</a>
+        </p>
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/prekshitha-gl-535294366"
+                target="_blank">linkedin.com/in/prekshitha-gl-535294366</a>
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Prekshitha GL | All Rights Reserved</p>
+    </footer>
+
+    <div id="resume-popup" class="popup">Resume is downloading…</div>
+
+    <!-- IMAGE VIEWER POPUP -->
+    <div id="img-popup" class="img-popup">
+        <span class="close-popup">&times;</span>
+        <img id="popup-img" class="popup-content">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
